@@ -4,8 +4,8 @@ import { Strategy, Profile } from 'passport-naver-v2';
 export class JwtNaverStrategy extends PassportStrategy(Strategy, 'naver') {
   constructor() {
     super({
-      clientID: 'jl4EerEGyMR1vQ75kW9O',
-      clientSecret: 'F_tR8hePyi',
+      clientID: '네이버ID',
+      clientSecret: '네이버시크릿',
       callbackURL: 'http://localhost:3000/login/naver',
       scope: ['email', 'name'],
     });

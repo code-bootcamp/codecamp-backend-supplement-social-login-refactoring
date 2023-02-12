@@ -4,8 +4,8 @@ import { Strategy, Profile } from 'passport-kakao';
 export class JwtKakaoStrategy extends PassportStrategy(Strategy, 'kakao') {
   constructor() {
     super({
-      clientID: '32eb310de4573d866721bd4edde9109c',
-      clientSecret: 'wwCj2nWHSLKSnM2VdGOD5BQc8ZPxOUEH',
+      clientID: '카카오ID',
+      clientSecret: '카카오시크릿',
       callbackURL: 'http://localhost:3000/login/kakao',
       scope: ['account_email', 'profile_nickname'],
     });
